@@ -1,0 +1,476 @@
+$blue: #15a4fa
+
+body
+	font-size: 62.5%
+
+
+@media only screen and (min-width : 20em)
+	.page-header
+		padding: 5%
+		background-color: #f6f9f9
+		.container
+			width: 80%
+
+	.hero
+		height: calc(100vh - 71px)
+		position: relative
+		background-image: url("../../img/hero/herobg.jpg")
+		background-position: bottom
+		background-size: cover
+		background-attachment: fixed
+
+		.container
+			padding: 30% 5% 0 5%
+			text-align: center
+			.title
+				margin-top: 0
+				margin-bottom: 1rem
+				font-family: "Lato", sans-serif
+				font-weight: bold
+				font-size: 4rem
+				text-transform: uppercase
+				letter-spacing: 2px
+				color: #ffffff
+
+			hr
+				display: block
+				width: 80%
+				margin: 0 auto
+				height: 1px
+				border: 0
+				border-top: 2px solid $blue
+
+				padding: 0
+
+			.subtitle
+				font-family: "Lato", sans-serif
+				font-size: 1rem
+				color: #ffffff
+
+			.hero-btn
+				position: relative
+				top: 10vh
+				color: #ffffff
+				font-size: 1rem
+				border: 1px solid $blue
+				border-radius: 2px
+				padding: 5%
+				text-decoration: none
+
+			.hero-arrow
+				display: block
+				margin: 0 auto
+				left: 0
+				right: 0
+				color: #ffffff
+				font-size: 1.5rem
+				position: absolute
+				bottom: 5vh
+
+	.intro
+		background-color: #f6f9f9
+		.container
+			padding: 5%
+
+			.title
+				font-family: "Lato", sans-serif
+				font-weight: 400
+				font-size: 1.5rem
+				text-align: center
+				color: #2d3950
+
+			.description
+				font-family: "Lato", sans-serif
+				font-size: 0.9rem
+				color: #999999
+				text-align: center
+
+	.feature
+		display: flex
+		flex-direction: column
+		padding: 10%
+
+		text-align: center
+
+		.feature-block
+			width: 100%
+			margin: 7% 0
+			.title
+				font-family: "Lato", sans-serif
+				font-weight: 400
+				color: #2d3950
+				font-size: 1.25rem
+
+			.description
+				font-family: "Lato", sans-serif
+				color: #999999
+				font-size: 0.9rem
+
+	.portfolio
+		padding: 5% 0
+		background-color: #f6f9f9
+		.container
+			width: 100%
+		.title
+			font-family: "Lato", sans-serif
+			font-weight: 400
+			font-size: 1.35rem
+			text-align: center
+			color: #2d3950
+
+		.subtitle
+			font-family: "Lato", sans-serif
+			font-size: 0.8rem
+			text-align: center
+			color: #999999
+
+		.portfolio-images
+			display: flex
+			flex-direction: column
+
+			.img-wrapper
+				position: relative
+				padding: 0
+				margin: 0
+
+
+				&:after
+					position: absolute
+					content: ''
+					top: 0
+					height: 100%
+					width: 100%
+					background-color: rgba($blue, 0.1)
+
+				img
+					width: 100%
+					height: 100%
+				figcaption
+					position: absolute
+					bottom: 10px
+					left: 10px
+
+
+					i
+						position: relative
+
+						padding: 10px
+
+						background-color: rgba(white, .8)
+
+
+	.contact
+		padding: 5%
+		height: 100%
+		background-image: url("../../img/contact/background.jpg")
+		background-size: cover
+		background-position: bottom
+		background-attachment: fixed
+
+		&:after
+			display: block
+			content: ''
+			clear: both
+
+		.container
+			.title
+				font-family: "Lato", sans-serif
+				font-weight: 400
+				font-size: 1.35rem
+				text-align: center
+				color: #ffffff
+
+			.subtitle
+				font-family: "Lato", sans-serif
+				font-size: 0.8rem
+				text-align: center
+				color: #999999
+
+
+			form
+				input[type="text"], input[type="email"]
+					width: 100%
+					height: 40px
+					margin: 3% 0
+					background-color: transparent
+					border: 1px solid #999999
+					border-radius: 2px
+
+					&::-webkit-input-placeholder
+						color: #999999
+						font-family: "Lato", sans-serif
+						font-size: 0.75rem
+						padding-left: 5%
+
+					&::-moz-placeholder
+						color: #999999
+						font-family: "Lato", sans-serif
+						font-size: 0.75rem
+						padding-left: 5%
+
+				textarea
+					width: 100%
+					background-color: transparent
+					border: 1px solid #999999
+					border-radius: 2px
+					&::-webkit-input-placeholder
+						color: #999999
+						font-family: "Lato", sans-serif
+						font-size: 0.75rem
+						padding-left: 5%
+						padding-top: 2.5%
+
+					&::-moz-placeholder
+						padding-left: 5%
+						padding-top: 2.5%
+						color: #999999
+						font-family: "Lato", sans-serif
+						font-size: 0.75rem
+
+				button
+					margin-top: 3%
+					font-family: "Lato", sans-serif
+					font-size: 1rem
+					color: #ffffff
+					padding: 2% 7%
+					background-color: transparent
+					border: 1px solid $blue
+					border-radius: 2px
+					float: right
+
+				#form-check
+					margin-top: 6%
+
+
+				label
+					font-family: "Lato", sans-serif
+					font-size: 0.8rem
+					color: #ffffff
+
+	.page-footer
+		background-color: #f6f9f9
+		padding: 5%
+		text-align: center
+		p
+			font-family: "Lato", sans-serif
+			color: #999999
+
+		.social-links
+			padding-left: 0
+
+			li
+				list-style-type: none
+				display: inline-block
+				margin: 1%
+
+				height: 40px
+				width: 40px
+				background-color: $blue
+
+				a
+					font-size: 1rem
+					color: #ffffff
+					position: relative
+					top: 12.5px
+
+
+
+
+
+
+
+@media only screen and (min-width : 48em)
+	.page-header
+		padding: 2.5% 5%
+
+	.hero
+		height: calc(100vh - 77px)
+		.container
+			padding: 15% 5% 0 5%
+
+			hr
+				width: 50%
+
+			.hero-btn
+				padding: 2% 4%
+
+
+	.intro
+		.container
+			padding: 5% 15%
+
+	.feature
+		display: flex
+		flex-direction: row
+		padding: 5%
+
+		text-align: center
+
+		.feature-block
+			width: calc(100% / 3)
+			.title
+				letter-spacing: 4px
+
+
+	.portfolio
+		.container
+			width: 100%
+
+		.portfolio-images
+			display: flex
+			flex-direction: row
+			flex-wrap: wrap
+
+			.img-wrapper
+				position: relative
+				padding: 0
+				margin: 0
+				width: calc(100% / 3)
+
+
+
+	.contact
+
+		.container
+			form
+				input[type="text"], input[type="email"]
+
+
+					&::-webkit-input-placeholder
+						padding-left: 2.5%
+
+					&::-moz-placeholder
+						padding-left: 2.5%
+
+				textarea
+					&::-webkit-input-placeholder
+						padding-left: 2.5%
+
+					&::-moz-placeholder
+						padding-left: 2.5%
+
+
+
+@media only screen and (min-width : 64em)
+
+	.hero
+		.container
+			padding: 20% 5% 0 5%
+			.title
+				font-size: 5rem
+				letter-spacing: 10px
+
+			hr
+				width: 40%
+
+			.subtitle
+				font-size: 1.25rem
+				letter-spacing: 2px
+
+			.hero-btn
+				font-size: 1.25rem
+				padding: 1.5% 3.5%
+				letter-spacing: 2px
+				transition: 0.25s
+				&:hover
+					background-color: $blue
+					color: #ffffff
+					transition: 0.25s
+
+
+	.intro
+		.container
+			padding: 5% 10%
+
+
+	.feature
+		.feature-block
+			.title
+				letter-spacing: 1px
+
+			.description
+				margin: 0 5%
+				letter-spacing: 1px
+
+
+	.portfolio
+		padding: 5% 0
+		.container
+			width: 80%
+			margin: 0 auto
+
+			.title
+				font-size: 2rem
+				margin-bottom: 0
+
+			.subtitle
+				margin-top: 5px
+				margin-bottom: 6%
+				font-size: 1.2rem
+
+			.portfolio-images
+				.img-wrapper
+					position: relative
+					padding: 0
+					margin: -2px
+					transition: .3s
+
+					&:hover
+						transition: .3s
+						&:after
+							position: absolute
+							content: ''
+							top: 0
+							height: 100%
+							width: 100%
+							background-color: rgba($blue, 0.4)
+							transition: .3s
+
+						figcaption
+							opacity: 1
+							transition: 1s
+
+				figcaption
+					opacity: 0
+					transition: .3s
+
+
+
+
+
+	.contact
+		padding: 5% 25%
+
+		.container
+			button
+				transition: 0.3s
+				&:hover
+					background-color: $blue
+					color: #ffffff
+					transition: 0.3s
+
+
+
+@media only screen and (min-width : 85em)
+
+	.hero
+		.container
+			padding: 7% 5% 0 5%
+
+			.hero-arrow
+				bottom: 50px
+
+
+	.intro
+		.container
+			.title
+				font-size: 2rem
+			.description
+				font-size: 1.25rem
+				font-weight: 300
+
+	.feature
+		padding: 0 10%
+
+
+
